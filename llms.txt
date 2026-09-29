@@ -5,6 +5,7 @@
 ## Dados do negócio
 
 - Nome: VW Despachante (VW Despachante & Serviços)
+- Razão social: VW Serviços de Despachantes Ltda — CNPJ 25.224.167/0001-67
 - Endereço: Rua Pastor Plácido da Rocha Pitta, bairro Renato Gonçalves, Barreiras-BA, CEP 47806-046, ao lado da 10ª Ciretran-Detran
 - Telefone e WhatsApp: (77) 99112-9068 — https://wa.me/5577991129068
 - Horário: segunda a sexta, das 8h às 17h. Fechado aos sábados, domingos e feriados. Não é preciso agendar.

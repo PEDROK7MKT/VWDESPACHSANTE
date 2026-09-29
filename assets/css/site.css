@@ -402,7 +402,10 @@ p { margin: 0; }
 .rodape a { color: var(--texto-suave); display: inline-flex; align-items: center; gap: 0.45rem; min-height: 44px; }
 .rodape a:hover { color: var(--destaque); }
 .rodape .ic { width: 18px; height: 18px; }
-.rodape-base { margin-top: 2rem; padding-top: 1.25rem; border-top: 1px solid var(--linha); font-size: 0.9rem; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.5rem 1.5rem; }
+.rodape-empresa span { white-space: nowrap; }
+.rodape-empresa strong { color: var(--asfalto); font-weight: 600; letter-spacing: 0.02em; }
+.rodape-sep { margin: 0 0.35rem; color: var(--vermelho); }
+.rodape-base { margin-top: 2rem; padding-top: 1.25rem; border-top: 1px solid var(--linha); font-size: 0.9rem; line-height: 1.7; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 0.5rem 1.5rem; }
 
 .barra-movel {
   position: fixed; left: 0; right: 0; bottom: 0; z-index: 30;
