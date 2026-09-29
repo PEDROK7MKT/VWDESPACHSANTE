@@ -11,8 +11,16 @@ index.html              página única (conteúdo + JSON-LD LocalBusiness/FAQPag
 assets/css/site.css     estilos: tokens de tema -> base -> layout -> componentes -> blocos
 assets/img/             logos e ícones do site
 assets/img/fotos/       fotos reais (atendimento, equipe, escritório, placas)
-vercel.json             URLs limpas (/pagina.html -> /pagina) e cache dos assets
+vercel.json             URLs limpas, redirect do alias .vercel.app para o www e cache dos assets
+robots.txt, sitemap.xml rastreamento (Google, Bing e robôs de IA liberados)
+llms.txt                resumo factual do negócio para assistentes de IA
+404.html                página de erro com CTA
+<chave>.txt             chave do IndexNow (Bing) — não apagar
 ```
+
+Domínio canônico: **https://www.vwdespachante.com.br/** (o apex redireciona para o www na Vercel).
+Todo canonical, og:url, JSON-LD e sitemap usam o www. Ao editar o conteúdo, atualize
+`dateModified` no JSON-LD, `lastmod` no sitemap e a data "Atualizado em" do rodapé.
 
 ## Regras de conteúdo
 
@@ -25,15 +33,16 @@ vercel.json             URLs limpas (/pagina.html -> /pagina) e cache dos assets
 
 | Classe | Uso |
 | --- | --- |
-| `.secao`, `.secao-alt`, `.secao-cabeca`, `.sobretitulo`, `.secao-intro` | seção padrão com cabeçalho |
-| `.grade .grade-2/-3/-4` | grades responsivas de cartões |
-| `.card`, `.card-hover`, `.pastilha` | cartão com ícone |
+| `.secao`, `.secao-intro` | seção padrão |
+| `.linhas`, `.linhas-2` | lista em linhas com régua vermelha (serviços) |
+| `.motivo` | bloco com régua vermelha à esquerda |
+| `.foto` | foto com legenda (serviços realizados) |
 | `.btn .btn-whats/-linha/-claro/-branco/-lg`, `.acoes` | botões (mín. 48px de toque) |
 | `.chips` | lista de cidades/tags |
 | `.placa` | placa Mercosul em CSS |
 | `.faq` | perguntas com `<details>` |
 | `.foto-pendente` | espaço reservado para foto (remover quando a foto entrar) |
-| `<svg class="ic"><use href="#i-..."/></svg>` | ícones do sprite no topo do `<body>` |
+| `<svg class="ic"><use href="#i-..."/></svg>` | ícones do sprite (só em botões/contato) |
 
 Para outro despachante: troque os tokens em `:root` (bloco 1 do CSS), o logo em `assets/img/`
 e os dados do negócio no HTML + JSON-LD.
@@ -51,3 +60,6 @@ e os dados do negócio no HTML + JSON-LD.
 Busque `SUBSTITUIR` no `index.html`: cada comentário traz o nome do arquivo, a proporção e o
 `alt` já escrito. Formato: `.webp` (800 e 1200 px de largura) + `.jpg` de fallback, até ~200 KB
 cada.
+
+Placas e documentos de clientes devem ser desfocados antes de publicar (dados pessoais).
+Remova metadados (EXIF/GPS) das fotos.

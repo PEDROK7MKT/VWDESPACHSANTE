@@ -1,0 +1,6 @@
+# VW Despachante — despachante em Barreiras-BA
+# Buscadores e assistentes de IA são bem-vindos: o conteúdo é público.
+User-agent: *
+Allow: /
+
+Sitemap: https://www.vwdespachante.com.br/sitemap.xml
