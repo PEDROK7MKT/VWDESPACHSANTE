@@ -52,7 +52,7 @@ e os dados do negócio no HTML + JSON-LD.
 - Páginas por serviço/cidade: criar `transferencia-de-veiculo-barreiras.html` etc. na raiz.
   Com `cleanUrls` elas abrem em `/transferencia-de-veiculo-barreiras`. Usar os mesmos
   `site.css`, sprite de ícones, cabeçalho e rodapé, e referenciar a empresa no schema pelo
-  `@id` `https://vwdespachante.com.br/#vw-despachante`.
+  `@id` `https://www.vwdespachante.com.br/#vw-despachante`.
 - Blog: pasta `blog/` com o mesmo padrão.
 
 ## Fotos
